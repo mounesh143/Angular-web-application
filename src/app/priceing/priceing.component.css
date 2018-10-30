@@ -1,0 +1,12 @@
+.possition{
+position: relative;
+}
+.dropdown_search {
+position: absolute;
+z-index: 1;
+width: 100%;
+height: 200px;
+max-width: 300px;
+background: #fff;
+overflow: scroll;
+}

@@ -1,0 +1,25 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  .example-option-img {
+    vertical-align: middle;
+  }
+  
+  .example-button-toggle-label {
+    display: inline-block;
+    margin: 16px;
+  }
+
+  .mat-tab-label-conten.mat-tab-label .mat-tab-label-content{
+    
+    background-color: orangered;
+    color: #fff;
+    padding: 61px;    
+  }

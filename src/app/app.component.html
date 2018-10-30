@@ -1,0 +1,35 @@
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Movie  Hub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ 
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/events" routerLinkActive ="active">Events <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"routerLink="/specail" routerLinkActive ="active" >Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="nav-link"routerLink="/priceing" routerLinkActive ="active" >Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="nav-link"routerLink="/contact" routerLinkActive ="active">Contact</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item"><a class="nav-link" *ngIf ="!_authService.loggedIn()" routerLink="/login" routerLinkActive ="active">Login</a></li>
+        <li class="nav-item"><a class="nav-link"  *ngIf ="!_authService.loggedIn()" routerLink="/register" routerLinkActive ="active">Register</a></li>
+        <li class="nav-item"><a class="nav-link" style="cursor: pointer" *ngIf ="_authService.loggedIn()" (click) = "_authService.logoutUser()">Logout</a></li>
+    </ul>
+
+
+    </div>
+  </nav>
+
+  <router-outlet>
+    
+  </router-outlet>

@@ -1,0 +1,21 @@
+
+<div class="container" style="margin-top: 35px;">
+  <div class="row">
+<div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor ="let event of specials">
+      <div class="card text-center">
+        <div class="card-body">
+        <h5 class="card-title">{{event.name}}</h5>
+        <p class="card-text">{{event.description}}</p>
+        <a href="#" class="btn btn-success">Buy Tickets</a>
+        </div>
+        <div class="card-footer text-muted">
+          {{event.date}}
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  
